@@ -1,0 +1,74 @@
+
+html,
+body {
+  background: #26C6DA;
+  padding: 10px;
+  font-family: "Comic Sans MS", cursive, 'sans-serif';
+  color: white;
+  position: absolute; /* postulat de départ */
+  top: 50%; left: 50%; /* à 50%/50% du parent référent */
+  transform: translate(-50%, -50%);
+}
+
+h1{
+	color:white;
+ }
+
+
+img{
+  text-align: center;
+}
+
+
+input{
+	background: #FFB74D;
+	color:white;
+	height: 25px;
+	margin-bottom: 5px;
+	border : 1px solid #FFA726;
+	width :175px;
+	outline : none;
+	text-align: center;
+
+}
+
+.authen{
+  text-align: center;
+}
+
+
+#submit{
+	background: #26C6DA;
+	color:white;
+	border : 1px solid #FFA726;
+
+}
+
+a{
+
+color: inherit;
+}
+
+
+::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+    color:    white;
+    text-align: center
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+   color:   white;
+   opacity:  1;
+   ext-align: center
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+   color:   white;
+   opacity:  1;
+   ext-align: center
+}
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+   color:    white;
+   ext-align: center
+}
+::-ms-input-placeholder { /* Microsoft Edge */
+   color:   white;
+   ext-align: center
+}
