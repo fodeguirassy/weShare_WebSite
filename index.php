@@ -1,5 +1,14 @@
+<?php
+    class User{
+      public $username;
+      public $password; 
+        public $token;
+    }
+    
+?>
 
-<!doctype html>
+<?php
+echo '<!doctype html>
 <html>
   <head>
     <title>Accueil</title>
@@ -17,7 +26,7 @@
         <input id="password" type="password"  placeholder="Password"/><br />
         <input id="submit"  type="button" value="Login"/>
       </form>
-      <p id="resultat"> </p> 
+      <p id="resultat"> </p> '; ?>
       <script>
       
         $(document).ready(function(){
@@ -46,18 +55,17 @@
      },
 
        success : function(response) {
-          console.log('response is ' + response);
-         
           
+          /*
+          $user = new User();
+          $jsonObject = json_decode(response);
 
+          $user->username = $jsonObject->{'username'};
+          $user->password = $jsonObject->{'password'};
+          $user->token = $jsonObject->{'token'};
 
-
-         /* if( response != null){
-            document.location.href="formulaire.php";
-          
-          }else if(empty($("#username").val()) || empty($("#password").val() == null)){
-            document.getElementById('resultat').innerHTML = "Identifiants invalides";
-          }*/
+          console.log('user is ' + $user->username);
+          */
        },
        error : function(resultat, statut, erreur){
 
